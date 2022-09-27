@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+
+    font-family: myFirstFont;
+
+    src: url(/Assets/Fonts/Midorima-PersonalUse-Regular.ttf);
+
+}
+
+
+
+@font-face {
+
+    font-family: myFirstFont;
+
+    src: url(/Assets/Fonts/Midorima-PersonalUse-Regular.ttf);
+
+    font-weight: bold;
+
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.784);
+}
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+    border: 0px solid #000000;
+}
+
+#header {
+    display: flex;
+    padding-left: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #000000;
+    font-size: 20px;
+    border: 2px solid #000000;
+}
+
+#header img {
+    height: 250px;
+    border-radius: 50%;
+}
+
+#header img:hover {
+    transition: 0.7s;
+    transform: rotate(360deg);
+}
+
+#header h1 {
+    font-size: 95px;
+    padding-top: 70px;
+    padding-left: 50px;
+    color: rgb(251, 251, 251);
+    font-family: myFirstFont;
+}
+
+.about-me {
+    width: 350px;
+    bottom: 90px;
+    border: 4px solid #000000;
+    display: inline-block;
+}
+
+#content {
+    border: 2px solid #000000;
+    display: block;
+    position: relative;
+}
+
+#content-text {
+    width: 400px;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+#content {
+    background: linear-gradient(-45deg, #00faff, #00008b, #00faff, #00008b);
+
+    background-size: 400% 400%;
+
+    animation: gradient 15s ease infinite;
+
+    height: 100vh;
+
+    height: 500px;
+
+    padding: 50px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#content h2 {
+    font-size: 80px;
+    font-family: myFirstFont;
+}
+
+#content h1 {
+    font-size: 50px;
+    font-family: myFirstFont;
+}
+
+#content #intro {
+    padding-top: 20px;
+    font-weight: bold;
+}
+#content #overig {
+    padding-top: 20px;
+    font-weight: bold;
+}
+#content #kennis {
+    padding-top: 20px;
+    font-weight: bold;
+}
+#content #kennis ul {
+    padding-left: 15px;
+}
+
+#experimental {
+    border: 2px solid #000000;
+}
+
+#ttc {
+    font-family: "Itim", cursive;
+}
+
+#experimental {
+    background: linear-gradient(-45deg, #272524, #fbfbfb, #272524, #fbfbfb);
+
+    background-size: 400% 400%;
+
+    animation: gradient 15s ease infinite;
+
+    height: 100vh;
+
+    height: 500px;
+
+    padding: 50px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#experimental h2 {
+    font-size: 60px;
+}
+#footer {
+    background-color: #ffffff;
+    height: 100px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 0px;
+    border: 2px solid #000000;
+}
+#footer ul {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    padding-top: 0px;
+}
+#footer ul li {
+    display: inline-block;
+}
+
+#footer ul li a {
+    padding: 1px;
+}
+
+.social-icons {
+    width: 75px;
+}
+
+#instagram {
+    margin-left: 0px;
+}
+
+#github {
+    margin-left: 200px;
+}
+
+#tiktok {
+    margin-left: 200px;
+}
+.title {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 40px;
+    margin-top: -5%;
+}
+
+.display {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: "Itim", cursive;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+}
+
+.tile {
+    border: 2px solid rgb(0, 0, 0);
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    font-family: "Itim", cursive;
+}
+
+.playerX {
+    color: #00ffff;
+    font-family: "Itim", cursive;
+}
+
+.playerO {
+    color: #ff00ff;
+    font-family: "Itim", cursive;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.controls button {
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.restart {
+    background-color: #498afb;
+    font-family: "Itim", cursive;
+}
+
+#reset {
+    background-color: #ff3860;
+    font-family: "Itim", cursive;
+}
